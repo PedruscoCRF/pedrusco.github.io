@@ -1,301 +1,435 @@
 <!DOCTYPE html>
-    <html lang="pt-br>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo de Pedro Lucas — Suporte Técnico, Infraestrutura de TI, Redes e Telecomunicações. São Gonçalo, RJ.">
+    <meta name="theme-color" content="#6366f1">
 
-        <!-- BOX ICONS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Pedro Lucas — Suporte Técnico e Infraestrutura de TI</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link rel="icon" href="assets/img/pedro.jpeg"  type="image/jpg">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
 
-        <title>Pedro Lucas</title>
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav_logo">Pedro Lucas</a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active-link">
-                                <i class='bx bx-home nav_icon'></i>Home
-                            </a>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/img/pedro.jpeg" type="image/jpeg">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Pedro <span>Lucas</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link"><i class='bx bx-home-alt nav__icon'></i>Início</a></li>
+                    <li><a href="#profile" class="nav__link"><i class='bx bx-user nav__icon'></i>Perfil</a></li>
+                    <li><a href="#education" class="nav__link"><i class='bx bx-book nav__icon'></i>Formação</a></li>
+                    <li><a href="#skills" class="nav__link"><i class='bx bx-code-block nav__icon'></i>Habilidades</a></li>
+                    <li><a href="#experience" class="nav__link"><i class='bx bx-briefcase-alt-2 nav__icon'></i>Experiência</a></li>
+                    <li><a href="#certificate" class="nav__link"><i class='bx bx-award nav__icon'></i>Certificados</a></li>
+                    <li><a href="#references" class="nav__link"><i class='bx bx-link-alt nav__icon'></i>Referências</a></li>
+                </ul>
+                <button class="nav__close icon-btn" id="nav-close" aria-label="Fechar menu">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <button class="icon-btn" id="theme-button" title="Alternar tema" aria-label="Alternar tema">
+                    <i class='bx bx-moon' id="theme-icon"></i>
+                </button>
+                <button class="icon-btn nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="resume">
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero__glow" aria-hidden="true"></div>
+
+            <div class="hero__photo">
+                <img src="assets/img/pedro.jpeg" alt="Foto de Pedro Lucas" class="hero__img">
+            </div>
+
+            <div class="hero__content">
+                <span class="hero__badge">
+                    <span class="hero__dot"></span> Disponível para oportunidades
+                </span>
+                <h1 class="hero__title">Pedro <b>Lucas</b></h1>
+                <p class="hero__role">
+                    <i class='bx bx-wrench'></i> Suporte Técnico &nbsp;·&nbsp;
+                    <i class='bx bx-server'></i> Infraestrutura de TI
+                </p>
+                <p class="hero__text">
+                    Suporte e infraestrutura de TI com vivência em ambientes corporativos e operações
+                    críticas: redes, Windows Server, Active Directory, CFTV, telefonia IP e
+                    telecomunicações — incluindo infraestrutura embarcada em ambiente offshore.
+                </p>
+
+                <div class="hero__chips">
+                    <span class="chip"><i class='bx bx-map'></i> São Gonçalo, RJ</span>
+                    <a class="chip" href="mailto:pedrolcsantos541@gmail.com"><i class='bx bx-envelope'></i> pedrolcsantos541@gmail.com</a>
+                    <a class="chip" href="tel:+5521997743710"><i class='bx bx-phone'></i> +55 (21) 99774-3710</a>
+                </div>
+
+                <div class="hero__actions">
+                    <button class="btn btn--primary" id="resume-button">
+                        <i class='bx bx-download'></i> Baixar currículo
+                    </button>
+                    <a class="btn btn--ghost" href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener">
+                        <i class='bx bxl-linkedin'></i> LinkedIn
+                    </a>
+                    <a class="btn btn--ghost" href="https://github.com/PedruscoCRF" target="_blank" rel="noopener">
+                        <i class='bx bxl-github'></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="layout">
+            <!-- COLUNA ESQUERDA -->
+            <div class="layout__col">
+                <!-- PERFIL -->
+                <section class="card section" id="profile">
+                    <h2 class="card__title"><i class='bx bx-user'></i> Perfil</h2>
+                    <p class="card__text">
+                        Profissional de suporte e infraestrutura de TI com experiência em ambientes
+                        corporativos e operações críticas. Atuação com redes de computadores, Windows Server,
+                        Active Directory (AD), SharePoint, hardware, software, CFTV, segurança eletrônica e
+                        telecomunicações. Vivência com switches, roteadores, access points, firewalls,
+                        cabeamento estruturado, servidores, telefonia IP e analógica, suporte a usuários,
+                        documentação técnica e troubleshooting. Experiência adicional em ambiente offshore,
+                        com infraestrutura de TI embarcada, conectividade via Starlink e suporte a sistemas
+                        de navegação e comunicação.
+                    </p>
+                </section>
+
+                <!-- EDUCAÇÃO -->
+                <section class="card section" id="education">
+                    <h2 class="card__title"><i class='bx bx-book'></i> Formação</h2>
+                    <ul class="timeline">
+                        <li class="timeline__item">
+                            <span class="timeline__dot"></span>
+                            <div class="timeline__body">
+                                <h3 class="timeline__title">Ciência da Computação</h3>
+                                <span class="timeline__place">Unifacvest (EAD) · Lages, SC</span>
+                                <span class="timeline__year">Em andamento — 2026</span>
+                            </div>
                         </li>
-                        <li class="nav_item">
-                            <a href="#profile" class="nav_link">
-                                <i class='bx bx-user nav_icon'></i>Profile
-                            </a>
+                        <li class="timeline__item">
+                            <span class="timeline__dot"></span>
+                            <div class="timeline__body">
+                                <h3 class="timeline__title">Inglês</h3>
+                                <span class="timeline__place">Centro Integrado Ulysses Guimarães · São Gonçalo, RJ</span>
+                                <span class="timeline__year">Concluído — 2024</span>
+                            </div>
                         </li>
-                        <li class="nav_item">
-                            <a href="#education" class="nav_link">
-                                <i class='bx bx-book nav_icon'></i>Educação
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class='bx bx-receipt nav_icon'></i>Habilidades
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#experience" class="nav_link">
-                                <i class='bx bx-briefcase-alt nav_icon'></i>Experiência
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#certificate" class="nav_link">
-                                <i class='bx bx-award nav_icon'></i>Certificados
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#references" class="nav_link">
-                                <i class='bx bx-link-external nav_icon'></i>Referencias
-                            </a>
+                        <li class="timeline__item timeline__item--last">
+                            <span class="timeline__dot"></span>
+                            <div class="timeline__body">
+                                <h3 class="timeline__title">Ensino Médio</h3>
+                                <span class="timeline__place">CIEP 412 Dr. Zerbini · São Gonçalo, RJ</span>
+                                <span class="timeline__year">Concluído — 2020</span>
+                            </div>
                         </li>
                     </ul>
-                </div>
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </nav>
-        </header>
+                </section>
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!-- HOME -->
-                    <section class="home" id="home">
-                        <div class="home_containter section bd-grid">
-                            <div class="home_data bd-grid">
-                                <img src="assets/img/pedro.jpeg" alt="" class="home_img center">
-                                <h1 class="home_title">Pedro <b>Lucas</b></h1>
-                                <h3 class="home_profession">Developer</h3>
-                                <!-- Button to generate and download the pdf. Available for desktop. -->
-                                <div>
-                                    <a download="" href="assets/pdf/Muhammadessa-resume.pdf" class="home_button-movil">Download</a>
-                                </div>
-                            </div>
-                            <div class="home_address bd-grid">
-                                <span class="home_information">
-                                    <i class="bx bx-map"> &nbsp; </i> Rio de Janeiro, Brasil
-                                </span>
-                                <span class="home_information">
-                                    <i class="bx bx-envelope"> &nbsp; </i> pedrolcsantos541@gmail.com
-                                </span>
-                                <span class="home_information">
-                                    <i class="bx bx-phone"> &nbsp; </i> +55 (21) 99773-4710
-                                </span>
-                            </div>
-                        </div>
-                        
-                        <!-- Theme change button -->
-                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-                        <!-- Button to generate and download the pdf. Available for desktop -->
-                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
-                    </section>          
-                    
-                    <!-- SOCIAL -->
-                    <section class="social section">
-                        <h2 class="section-title">SOCIAL</h2>
-                        <div class="social_container bd-grid">
-                            <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" class="social_link">
-                                <i class="bx bxl-linkedin-square social_icon"></i> @pedrolucas
-                            </a>
-                            <a href="https://github.com/Pedrusco-CRF/" target="_blank" class="social_link">
-                                <i class="bx bxl-github social_icon"></i> @pedrolucas
-                            </a>
-                            <a href="https://https://instagram.com/pedrusco.atl/" target="_blank" class="social_link">
-                                <i class="bx bxl-twitter social_icon"></i> @pedrusco
-                            </a>
-                        </div>
-                    </section>
-                    <!-- PROFILE -->
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Perfil</h2>
-                        <p class="profile_description">
-                            Sou uma pessoa muito responsável durante o horário de trabalho atribuído por uma empresa. Sou uma pessoa muito orientada para objetivos, orientada para resultados, detalhista e focada. Tenho poucos anos de experiência no ramo, porém esforço e disposição para aprender são duas coisas que não irão faltar.
-                        </p>
-                    </section>
-                    
-                    <!-- EDUCATION -->
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Educação</h2>
-                        <div class="education_container bd-grid">
-                            <div class="education_content">
-                                <div class="education_time">
-                                    <span class="education_rounder"></span>
-                                    <span class="education_line"></span>
-                                </div>
-                                <div class="education_data bd-grid">
-                                    <h3 class="education_title">Bacharelado em Ciência da Computação</h3>
-                                    <span class="education_studies">Centro Universtiario FacVest, São Gonçalo, RJ</span>
-                                    <span class="education_year">2021 - atual</span>
-                                </div>
-                            </div>
-                            <div class="education_content">
-                                <div class="education_time">
-                                    <span class="education_rounder"></span>
-                                    <span class="education_line"></span>
-                                </div>
-                                <div class="education_data bd-grid">
-                                    <h3 class="education_title">Estudonauta</h3>
-                                    <span class="education_studies"></span>
-                                    <span class="education_year">2020 - 2022</span>
-                                </div>
-                            </div>
-                            <div class="education_content">
-                                <div class="education_time">
-                                    <span class="education_rounder"></span>
-                                    <!-- <span class="education_line"></span> -->
-                                </div>
-                                <div class="education_data bd-grid">
-                                    <h3 class="education_title">Ensino Médio</h3>
-                                    <span class="education_studies">Ciep 412 Dr. Zerbini , São Gonçalo, RJ</span>
-                                    <span class="education_year">2018 - 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- SKILLS  -->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-                        <div class="skills_content bd-grid">
-                            <ul class="skills_data">
-                                <li class="skills_name">
-                                    <span class="skills_circle"></span> HTML
-                                </li>
-                                <li class="skills_name">
-                                    <span class="skills_circle"></span> CSS
-                                </li>
-                                <li class="skills_name">
-                                    <span class="skills_circle"></span> BOOTSTRAP
-                                </li>
-                                <li class="skills_name">
-                                    <span class="skills_circle"></span> JAVASCRIPT
-                                </li>
-                            </ul>
-                            <ul class="skills_data">
-                                <li class="skills_name">
-                                    <span class="skills_circle"></span>PHP
-                                </li>
-                                <li class="skills_name">
-                                    <span class="skills_circle"></span>MYSQL
-                                </li>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-                <div class="resume__right">
-                    <!-- EXPERIENCE -->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experiência</h2>
-                        <div class="experience_container bd-grid">
-                            <div class="experience_content">
-                                <div class="experience_time">
-                                    <span class="experience_rounder"></span>
-                                    <span class="experience_line"></span>
-                                </div>
-                                <div class="experience_data bd-grid">
-                                    <h3 class="experience_title">Jovem Aprendiz</h3>
-                                    <span class="experience_company">02/2022 - 12/2022 | <a href="https://bravante.com.br">Grupo Bravante</a> </span>
-                                    <p class="experience_description">
-                                        Responsável por emissão de NF´s, entrada e saída de materiais necessários, logística de almoxarifado, cadastro e controle de materiais e fornecedores no sistema ERP SAP.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="experience_content">
-                                <div class="experience_time">
-                                    <span class="experience_rounder"></span>
-                                    <!-- <span class="experience_line"></span> -->
-                                </div>
-                                <div class="experience_data bd-grid">
-                                    <h3 class="experience_title">Estagiário</h3>
-                                    <span class="experience_company">02/2023 - Atual | <a href="http://www.procon.rj.gov.br">Procon-Rj</a></span>
-                                    <p class="experience_description">
-                                        Estágio em <b>Informática II</b> no <a href="http://www.procon.rj.gov.br">Procon-Rj</a>. Manutenção e montagem computadores, notebooks e WorkStations; Manutenção de Redes; Criação e e controle de Servidores e Usuários através do Active Directory e Windows Server; Desenvolvimento de automatizações de processos relacionados ao Procon-Rj, que é responsável por todo atendimento dirigidos aos consumidores em todo o estado do Rio de Janeiro
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- CERTIFICATES -->
-                    <section class="certificate section" id="certificate">
-                        <h2 class="section-title">Certificados</h2>
-                        <div class="certificate_container bd-grid">
-                            <div class="certificate_content">
-                                <h3 class="certificate_title">Python - Curso em Vídeo - 2021</h3>
-                                <p class="certificate_description">
-                                </p>
-                            </div>
-                            <div class="certificate_content">
-                                <h3 class="certificate_title">AWS - Amazon - 2023</h3>
-                                <p class="certificate_description">
-                                </p>
-                            </div>
-                            <div class="certificate_content">
-                                <h3 class="certificate_title">Web Desenvolvimento - 2022 </h3>
-                                <p class="certificate_description">
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- LANGUAGES -->
-                    <section class="languages section">
-                        <h2 class="section-title">Idiomas</h2>
-                        <div class="languages_container">
-                            <ul class="languages_content bd-grid">
-                                <li class="languages_name">
-                                    <span class="languages_circle"></span> Inglês
-                                </li>
-                                <li class="languages_name">
-                                    <span class="languages_circle"></span> Português
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    
-                    <!-- INTERESTS -->
-                    <section class="interests section">
-                        <h2 class="section-title">Interesses</h2>
-                        <div class="interests_container bd-grid">
-                            <div class="interests_content">
-                                <i class='bx bx-code-alt interests_icon'></i>
-                                <span class="interests_name">Programar</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class='bx bxs-coffee-togo interests_icon' ></i>
-                                <span class="interests_name">Café</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="bx bxs-plane-alt interests_icon"></i>
-                                <span class="interests_name">Viajar</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="bx bxs-camera interests_icon "></i>
-                                <span class="interests_name">Esportes</span>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>        
-        </main> 
+                <!-- SKILLS -->
+                <section class="card section" id="skills">
+                    <h2 class="card__title"><i class='bx bx-code-block'></i> Habilidades</h2>
 
-        <!-- SCROLL TOP -->
-            <a href="#" class="scrolltop" id="scrolltop">
-                <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
-            </a>
+                    <h3 class="card__subtitle">Redes &amp; telecom</h3>
+                    <div class="tags">
+                        <span class="tag"><i class='bx bx-network-chart'></i> TCP/IP</span>
+                        <span class="tag"><i class='bx bx-server'></i> Switches</span>
+                        <span class="tag"><i class='bx bx-git-branch'></i> Roteadores</span>
+                        <span class="tag"><i class='bx bx-wifi'></i> Access points</span>
+                        <span class="tag"><i class='bx bx-shield-quarter'></i> Firewall</span>
+                        <span class="tag"><i class='bx bx-plug'></i> Cabeamento estruturado</span>
+                        <span class="tag"><i class='bx bx-broadcast'></i> Starlink</span>
+                        <span class="tag"><i class='bx bx-phone-call'></i> Telefonia IP e analógica</span>
+                    </div>
 
-        <!-- HTML2PDF -->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
-        
-        <!-- MAIN JS -->
-        <script src="assets/js/main.js"></script>
-    </body> <br>
+                    <h3 class="card__subtitle">Servidores &amp; sistemas</h3>
+                    <div class="tags">
+                        <span class="tag"><i class='bx bxl-windows'></i> Windows Server</span>
+                        <span class="tag"><i class='bx bx-user-check'></i> Active Directory</span>
+                        <span class="tag"><i class='bx bx-folder-open'></i> SharePoint</span>
+                        <span class="tag"><i class='bx bx-hdd'></i> Servidores e backup</span>
+                        <span class="tag"><i class='bx bx-cube'></i> SAP</span>
+                    </div>
+
+                    <h3 class="card__subtitle">Segurança eletrônica</h3>
+                    <div class="tags">
+                        <span class="tag"><i class='bx bx-video-recording'></i> CFTV IP e analógico</span>
+                        <span class="tag"><i class='bx bx-lock-alt'></i> Segurança eletrônica</span>
+                        <span class="tag"><i class='bx bx-door-open'></i> Catracas</span>
+                        <span class="tag"><i class='bx bx-shield'></i> FortiGate</span>
+                    </div>
+
+                    <h3 class="card__subtitle">Suporte &amp; offshore</h3>
+                    <div class="tags">
+                        <span class="tag"><i class='bx bx-headphone'></i> Help desk</span>
+                        <span class="tag"><i class='bx bx-wrench'></i> Troubleshooting</span>
+                        <span class="tag"><i class='bx bx-laptop'></i> Hardware e software</span>
+                        <span class="tag"><i class='bx bx-radio-circle-marked'></i> SSB e AIS</span>
+                    </div>
+
+                    <h3 class="card__subtitle">Dados &amp; programação</h3>
+                    <div class="tags">
+                        <span class="tag"><i class='bx bxl-python'></i> Python</span>
+                        <span class="tag"><i class='bx bx-data'></i> SQL</span>
+                        <span class="tag"><i class='bx bx-bar-chart-alt-2'></i> Análise de dados</span>
+                    </div>
+                </section>
+
+                <!-- IDIOMAS -->
+                <section class="card section" id="languages">
+                    <h2 class="card__title"><i class='bx bx-globe'></i> Idiomas</h2>
+                    <ul class="language-list">
+                        <li class="language">
+                            <span class="language__name">Português</span>
+                            <span class="language__level">Nativo</span>
+                        </li>
+                        <li class="language">
+                            <span class="language__name">Inglês</span>
+                            <span class="language__level">Avançado — C1</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- COLUNA DIREITA -->
+            <div class="layout__col">
+                <!-- EXPERIÊNCIA -->
+                <section class="card section" id="experience">
+                    <h2 class="card__title"><i class='bx bx-briefcase-alt-2'></i> Experiência</h2>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">Auxiliar Técnico em Informática e Telefonia</h3>
+                            <span class="job__period">04/2026 — 07/2026</span>
+                        </div>
+                        <span class="job__company">
+                            <i class='bx bx-building'></i> NewScon · Rio de Janeiro, RJ
+                        </span>
+                        <ul class="job__list">
+                            <li>Administração e manutenção de Active Directory, Windows Server e SharePoint, com suporte à infraestrutura e aos serviços corporativos.</li>
+                            <li>Diagnóstico e manutenção de hardware e software, instalação e configuração de sistemas e aplicações.</li>
+                            <li>Elaboração de cotações, documentos e especificações técnicas de equipamentos, serviços e soluções de TI.</li>
+                            <li>Instalação e configuração de CFTV IP e analógico, catracas, segurança eletrônica, cabeamento estruturado e switches.</li>
+                            <li>Instalação e suporte de telefonia IP e analógica, incluindo configuração e manutenção de ramais.</li>
+                        </ul>
+                    </article>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">Técnico de Informática</h3>
+                            <span class="job__period">07/2025 — 02/2026</span>
+                        </div>
+                        <span class="job__company">
+                            <i class='bx bx-building'></i> FLCOMM · Niterói, RJ
+                        </span>
+                        <ul class="job__list">
+                            <li>Instalação, configuração e manutenção de CFTV e câmeras IP, com diagnóstico de falhas, ajustes de rede e suporte operacional.</li>
+                            <li>Suporte à infraestrutura de rede: firewall, cabeamento estruturado, switches, roteadores, access points e segmentação.</li>
+                            <li>Configuração, monitoramento e suporte de conectividade via Starlink e outros sistemas de comunicação satelital.</li>
+                            <li>Gerenciamento básico de servidores, serviços de rede, armazenamento e rotinas de backup.</li>
+                            <li>Suporte a SSB, AIS e sistemas auxiliares integrados à rede da embarcação, com troubleshooting de hardware, software e rede em ambiente crítico.</li>
+                            <li>Documentação técnica de configurações, topologias e intervenções realizadas.</li>
+                        </ul>
+                    </article>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">Estagiário de TI</h3>
+                            <span class="job__period">02/2023 — 12/2024</span>
+                        </div>
+                        <a class="job__company" href="http://www.procon.rj.gov.br" target="_blank" rel="noopener">
+                            <i class='bx bx-building'></i> Procon-RJ · Rio de Janeiro, RJ
+                        </a>
+                        <ul class="job__list">
+                            <li>Diagnóstico de problemas em equipamentos de informática e resolução de falhas de hardware e software.</li>
+                            <li>Montagem e configuração de computadores, sistemas operacionais e aplicativos.</li>
+                            <li>Suporte técnico a usuários, atendimento presencial e instalação e configuração de ferramentas via help desk.</li>
+                            <li>Elaboração de documentação técnica e monitoramento de desempenho de sistemas.</li>
+                        </ul>
+                    </article>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">Aprendiz</h3>
+                            <span class="job__period">02/2022 — 12/2022</span>
+                        </div>
+                        <a class="job__company" href="https://bravante.com.br" target="_blank" rel="noopener">
+                            <i class='bx bx-building'></i> Grupo Bravante · São Gonçalo, RJ
+                        </a>
+                        <ul class="job__list">
+                            <li>Atendimento a clientes, apoio à gestão documental e rotinas administrativas.</li>
+                            <li>Gestão e cadastro de materiais e fornecedores no SAP, além de controle de estoque.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- CERTIFICADOS -->
+                <section class="card section" id="certificate">
+                    <h2 class="card__title"><i class='bx bx-award'></i> Certificados</h2>
+                    <ul class="certificates">
+                        <li class="certificate">
+                            <i class='bx bx-shield-quarter certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">FortiGate Operator</h3>
+                                <span class="certificate__meta">Fortinet</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-shield certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">FortiGate Specialist</h3>
+                                <span class="certificate__meta">Fortinet</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-lock-alt certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">CyberSec</h3>
+                                <span class="certificate__meta">Fortinet</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-network-chart certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">CCNA</h3>
+                                <span class="certificate__meta">Cisco</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-phone-call certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">GS Certified Specialist</h3>
+                                <span class="certificate__meta">Grandstream</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-wifi certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">MikroTik</h3>
+                                <span class="certificate__meta">MikroTik</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-plug certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">Redes em Fibra</h3>
+                                <span class="certificate__meta">Intelbras</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-first-aid certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">CBSP e HUET</h3>
+                                <span class="certificate__meta">CEPAFMAR</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bxl-python certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">Python</h3>
+                                <span class="certificate__meta">Udemy</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-laptop certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">Redes e Computadores</h3>
+                                <span class="certificate__meta">Udemy</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-data certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">Certificação em Dados</h3>
+                                <span class="certificate__meta">Estudonauta</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-bar-chart-alt-2 certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">Análise de Dados</h3>
+                                <span class="certificate__meta">Curso em Vídeo</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-table certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">SQL</h3>
+                                <span class="certificate__meta">Curso em Vídeo</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- INTERESSES -->
+                <section class="card section" id="interests">
+                    <h2 class="card__title"><i class='bx bx-heart'></i> Interesses</h2>
+                    <div class="interests">
+                        <div class="interest"><i class='bx bx-code-alt'></i><span>Programar</span></div>
+                        <div class="interest"><i class='bx bxs-coffee-togo'></i><span>Café</span></div>
+                        <div class="interest"><i class='bx bxs-plane-alt'></i><span>Viajar</span></div>
+                        <div class="interest"><i class='bx bx-football'></i><span>Esportes</span></div>
+                    </div>
+                </section>
+
+                <!-- REFERÊNCIAS -->
+                <section class="card section" id="references">
+                    <h2 class="card__title"><i class='bx bx-link-alt'></i> Referências</h2>
+                    <p class="card__text">
+                        Referências profissionais disponíveis sob solicitação.
+                        Entre em contato por
+                        <a href="mailto:pedrolcsantos541@gmail.com" class="link">e-mail</a>
+                        ou pelo
+                        <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener" class="link">LinkedIn</a>.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year">2026</span> Pedro Lucas · São Gonçalo, RJ</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/PedruscoCRF" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/pedrusco.atl/" target="_blank" rel="noopener" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:pedrolcsantos541@gmail.com" aria-label="E-mail"><i class='bx bx-envelope'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#home" class="scrolltop" id="scrolltop" aria-label="Voltar ao topo">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <!-- HTML2PDF -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
