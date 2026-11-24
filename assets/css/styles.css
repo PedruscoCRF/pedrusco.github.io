@@ -1082,17 +1082,113 @@ body.pdf-mode .timeline__item {
     break-inside: avoid;
 }
 
+/* ============ 15. CURRÍCULO ATS (impressão / PDF) ============ */
+.ats-resume {
+    display: none;
+}
+
 @media print {
-    .header,
-    .footer,
-    .scrolltop,
-    .hero__actions,
-    .hero__web {
-        display: none !important;
+    @page {
+        size: A4;
+        margin: 9mm 12mm;
     }
 
     body {
-        background: #fff;
-        background-image: none;
+        background: #fff !important;
+        background-image: none !important;
+        color: #000 !important;
+    }
+
+    /* No PDF só existe o currículo ATS, em texto selecionável */
+    body > *:not(.ats-resume) {
+        display: none !important;
+    }
+
+    .ats-resume {
+        display: block !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.3pt;
+        line-height: 1.25;
+        color: #000;
+        text-align: left;
+    }
+
+    .ats-resume h1 {
+        margin: 0 0 1pt;
+        font-family: inherit;
+        font-size: 17pt;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: none;
+        color: #000;
+    }
+
+    .ats-resume .ats-role {
+        margin: 0 0 1pt;
+        font-size: 10.2pt;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .ats-resume .ats-contact {
+        margin: 0 0 6pt;
+        font-size: 9.2pt;
+        color: #000;
+    }
+
+    .ats-resume h2 {
+        margin: 6pt 0 3pt;
+        padding-bottom: 1.5pt;
+        border-bottom: 0.6pt solid #000;
+        font-family: inherit;
+        font-size: 10pt;
+        font-weight: 700;
+        letter-spacing: 0.6pt;
+        text-transform: uppercase;
+        color: #000;
+        break-after: avoid;
+    }
+
+    .ats-resume h3 {
+        margin: 0;
+        font-family: inherit;
+        font-size: 9.4pt;
+        font-weight: 700;
+        text-transform: none;
+        color: #000;
+    }
+
+    .ats-resume p {
+        margin: 0 0 3pt;
+    }
+
+    .ats-resume .ats-meta {
+        margin: 0 0 2pt;
+        font-size: 9pt;
+        font-style: italic;
+        color: #000;
+    }
+
+    .ats-resume ul {
+        margin: 0 0 4pt;
+        padding-left: 12pt;
+        list-style: disc;
+        break-inside: avoid;
+    }
+
+    .ats-resume li {
+        margin: 0 0 1pt;
+        padding: 0;
+        background: none;
+        color: #000;
+    }
+
+    .ats-resume li::before {
+        content: none;
+    }
+
+    .ats-resume .ats-job {
+        margin-bottom: 4pt;
+        break-inside: avoid;
     }
 }

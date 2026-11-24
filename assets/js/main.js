@@ -115,13 +115,13 @@ if (yearElement) {
 }
 
 /* ============================================================
-   GERAR PDF
+   GERAR PDF DA VERSÃO WEB (layout do site)
    ============================================================ */
-const resumeButton = document.getElementById('resume-button');
+const resumeWebButton = document.getElementById('resume-button-web');
 const resumeArea = document.getElementById('resume');
 
-if (resumeButton && resumeArea && typeof html2pdf !== 'undefined') {
-    resumeButton.addEventListener('click', async () => {
+if (resumeWebButton && resumeArea && typeof html2pdf !== 'undefined') {
+    resumeWebButton.addEventListener('click', async () => {
         const previousTheme = document.body.classList.contains(darkTheme);
 
         /* garante que logos e foto estejam decodificados antes da captura */
