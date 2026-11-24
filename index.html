@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Currículo de Pedro Lucas — Suporte Técnico, Infraestrutura de TI, Redes e Telecomunicações. São Gonçalo, RJ.">
-    <meta name="theme-color" content="#6366f1">
+    <meta name="theme-color" content="#0a0a0c">
 
     <title>Pedro Lucas — Suporte Técnico e Infraestrutura de TI</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
@@ -22,7 +22,7 @@
     <!-- FAVICON -->
     <link rel="icon" href="assets/img/pedro.jpeg" type="image/jpeg">
 </head>
-<body>
+<body class="dark-theme">
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
@@ -30,13 +30,13 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="#home" class="nav__link active-link"><i class='bx bx-home-alt nav__icon'></i>Início</a></li>
-                    <li><a href="#profile" class="nav__link"><i class='bx bx-user nav__icon'></i>Perfil</a></li>
-                    <li><a href="#education" class="nav__link"><i class='bx bx-book nav__icon'></i>Formação</a></li>
-                    <li><a href="#skills" class="nav__link"><i class='bx bx-code-block nav__icon'></i>Habilidades</a></li>
-                    <li><a href="#experience" class="nav__link"><i class='bx bx-briefcase-alt-2 nav__icon'></i>Experiência</a></li>
-                    <li><a href="#certificate" class="nav__link"><i class='bx bx-award nav__icon'></i>Certificados</a></li>
-                    <li><a href="#references" class="nav__link"><i class='bx bx-link-alt nav__icon'></i>Referências</a></li>
+                    <li><a href="#home" class="nav__link active-link">Início</a></li>
+                    <li><a href="#profile" class="nav__link">Perfil</a></li>
+                    <li><a href="#education" class="nav__link">Formação</a></li>
+                    <li><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li><a href="#experience" class="nav__link">Experiência</a></li>
+                    <li><a href="#certificate" class="nav__link">Certificados</a></li>
+                    <li><a href="#references" class="nav__link">Referências</a></li>
                 </ul>
                 <button class="nav__close icon-btn" id="nav-close" aria-label="Fechar menu">
                     <i class='bx bx-x'></i>
@@ -57,26 +57,30 @@
     <main class="container" id="resume">
         <!-- HERO -->
         <section class="hero" id="home">
-            <div class="hero__glow" aria-hidden="true"></div>
+            <svg class="hero__web" viewBox="0 0 220 220" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="1">
+                    <path d="M220 0 L0 0 M220 0 L64 156 M220 0 L220 220"/>
+                    <path d="M160 0 A60 60 0 0 1 220 60"/>
+                    <path d="M100 0 A120 120 0 0 1 220 120"/>
+                    <path d="M40 0 A180 180 0 0 1 220 180"/>
+                </g>
+            </svg>
 
             <div class="hero__photo">
                 <img src="assets/img/pedro.jpeg" alt="Foto de Pedro Lucas" class="hero__img">
             </div>
 
             <div class="hero__content">
-                <span class="hero__badge">
-                    <span class="hero__dot"></span> Disponível para oportunidades
-                </span>
+                <p class="hero__prompt"><span>pedro@sg-rj</span>:~$ whoami</p>
                 <h1 class="hero__title">Pedro <b>Lucas</b></h1>
-                <p class="hero__role">
-                    <i class='bx bx-wrench'></i> Suporte Técnico &nbsp;·&nbsp;
-                    <i class='bx bx-server'></i> Infraestrutura de TI
-                </p>
+                <p class="hero__role">suporte técnico · infraestrutura · redes e telecom</p>
                 <p class="hero__text">
                     Suporte e infraestrutura de TI com vivência em ambientes corporativos e operações
                     críticas: redes, Windows Server, Active Directory, CFTV, telefonia IP e
                     telecomunicações — incluindo infraestrutura embarcada em ambiente offshore.
                 </p>
+
+                <p class="hero__status"><span class="hero__dot"></span> disponível para oportunidades</p>
 
                 <div class="hero__chips">
                     <span class="chip"><i class='bx bx-map'></i> São Gonçalo, RJ</span>
@@ -103,7 +107,7 @@
             <div class="layout__col">
                 <!-- PERFIL -->
                 <section class="card section" id="profile">
-                    <h2 class="card__title"><i class='bx bx-user'></i> Perfil</h2>
+                    <h2 class="card__title">Perfil</h2>
                     <p class="card__text">
                         Profissional de suporte e infraestrutura de TI com experiência em ambientes
                         corporativos e operações críticas. Atuação com redes de computadores, Windows Server,
@@ -118,13 +122,13 @@
 
                 <!-- EDUCAÇÃO -->
                 <section class="card section" id="education">
-                    <h2 class="card__title"><i class='bx bx-book'></i> Formação</h2>
+                    <h2 class="card__title">Formação</h2>
                     <ul class="timeline">
                         <li class="timeline__item">
                             <span class="timeline__dot"></span>
                             <div class="timeline__body">
                                 <h3 class="timeline__title">Ciência da Computação</h3>
-                                <span class="timeline__place">Unifacvest (EAD) · Lages, SC</span>
+                                <span class="timeline__place">Universidade Federal Fluminense (UFF) · Niterói, RJ</span>
                                 <span class="timeline__year">Em andamento — 2026</span>
                             </div>
                         </li>
@@ -149,56 +153,66 @@
 
                 <!-- SKILLS -->
                 <section class="card section" id="skills">
-                    <h2 class="card__title"><i class='bx bx-code-block'></i> Habilidades</h2>
+                    <h2 class="card__title">Habilidades</h2>
 
+                    <div class="skill-group">
                     <h3 class="card__subtitle">Redes &amp; telecom</h3>
                     <div class="tags">
-                        <span class="tag"><i class='bx bx-network-chart'></i> TCP/IP</span>
-                        <span class="tag"><i class='bx bx-server'></i> Switches</span>
-                        <span class="tag"><i class='bx bx-git-branch'></i> Roteadores</span>
-                        <span class="tag"><i class='bx bx-wifi'></i> Access points</span>
-                        <span class="tag"><i class='bx bx-shield-quarter'></i> Firewall</span>
-                        <span class="tag"><i class='bx bx-plug'></i> Cabeamento estruturado</span>
-                        <span class="tag"><i class='bx bx-broadcast'></i> Starlink</span>
-                        <span class="tag"><i class='bx bx-phone-call'></i> Telefonia IP e analógica</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Switches</span>
+                        <span class="tag">Roteadores</span>
+                        <span class="tag">Access points</span>
+                        <span class="tag">Firewall</span>
+                        <span class="tag">Cabeamento estruturado</span>
+                        <span class="tag">Starlink</span>
+                        <span class="tag">Telefonia IP e analógica</span>
+                    </div>
                     </div>
 
+                    <div class="skill-group">
                     <h3 class="card__subtitle">Servidores &amp; sistemas</h3>
                     <div class="tags">
-                        <span class="tag"><i class='bx bxl-windows'></i> Windows Server</span>
-                        <span class="tag"><i class='bx bx-user-check'></i> Active Directory</span>
-                        <span class="tag"><i class='bx bx-folder-open'></i> SharePoint</span>
-                        <span class="tag"><i class='bx bx-hdd'></i> Servidores e backup</span>
-                        <span class="tag"><i class='bx bx-cube'></i> SAP</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">SharePoint</span>
+                        <span class="tag">Servidores e backup</span>
+                        <span class="tag">SAP</span>
+                    </div>
                     </div>
 
+                    <div class="skill-group">
                     <h3 class="card__subtitle">Segurança eletrônica</h3>
                     <div class="tags">
-                        <span class="tag"><i class='bx bx-video-recording'></i> CFTV IP e analógico</span>
-                        <span class="tag"><i class='bx bx-lock-alt'></i> Segurança eletrônica</span>
-                        <span class="tag"><i class='bx bx-door-open'></i> Catracas</span>
-                        <span class="tag"><i class='bx bx-shield'></i> FortiGate</span>
+                        <span class="tag">CFTV IP e analógico</span>
+                        <span class="tag">Segurança eletrônica</span>
+                        <span class="tag">Catracas</span>
+                        <span class="tag">FortiGate</span>
+                    </div>
                     </div>
 
+                    <div class="skill-group">
                     <h3 class="card__subtitle">Suporte &amp; offshore</h3>
                     <div class="tags">
-                        <span class="tag"><i class='bx bx-headphone'></i> Help desk</span>
-                        <span class="tag"><i class='bx bx-wrench'></i> Troubleshooting</span>
-                        <span class="tag"><i class='bx bx-laptop'></i> Hardware e software</span>
-                        <span class="tag"><i class='bx bx-radio-circle-marked'></i> SSB e AIS</span>
+                        <span class="tag">Help desk</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">Hardware e software</span>
+                        <span class="tag">SSB e AIS</span>
+                    </div>
                     </div>
 
+                    <div class="skill-group">
                     <h3 class="card__subtitle">Dados &amp; programação</h3>
                     <div class="tags">
-                        <span class="tag"><i class='bx bxl-python'></i> Python</span>
-                        <span class="tag"><i class='bx bx-data'></i> SQL</span>
-                        <span class="tag"><i class='bx bx-bar-chart-alt-2'></i> Análise de dados</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Análise de dados</span>
+                    </div>
                     </div>
                 </section>
 
                 <!-- IDIOMAS -->
                 <section class="card section" id="languages">
-                    <h2 class="card__title"><i class='bx bx-globe'></i> Idiomas</h2>
+                    <h2 class="card__title">Idiomas</h2>
                     <ul class="language-list">
                         <li class="language">
                             <span class="language__name">Português</span>
@@ -210,13 +224,25 @@
                         </li>
                     </ul>
                 </section>
+
+                <!-- REFERÊNCIAS -->
+                <section class="card section" id="references">
+                    <h2 class="card__title">Referências</h2>
+                    <p class="card__text">
+                        Referências profissionais disponíveis sob solicitação.
+                        Entre em contato por
+                        <a href="mailto:pedrolcsantos541@gmail.com" class="link">e-mail</a>
+                        ou pelo
+                        <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener" class="link">LinkedIn</a>.
+                    </p>
+                </section>
             </div>
 
             <!-- COLUNA DIREITA -->
             <div class="layout__col">
                 <!-- EXPERIÊNCIA -->
                 <section class="card section" id="experience">
-                    <h2 class="card__title"><i class='bx bx-briefcase-alt-2'></i> Experiência</h2>
+                    <h2 class="card__title">Experiência</h2>
 
                     <article class="job">
                         <div class="job__head">
@@ -282,52 +308,52 @@
 
                 <!-- CERTIFICADOS -->
                 <section class="card section" id="certificate">
-                    <h2 class="card__title"><i class='bx bx-award'></i> Certificados</h2>
+                    <h2 class="card__title">Certificados</h2>
                     <ul class="certificates">
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.svg" alt="Fortinet" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.png" alt="Fortinet"></span>
                             <div>
                                 <h3 class="certificate__title">FortiGate Operator</h3>
                                 <span class="certificate__meta">Fortinet</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.svg" alt="Fortinet" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.png" alt="Fortinet"></span>
                             <div>
                                 <h3 class="certificate__title">FortiGate Specialist</h3>
                                 <span class="certificate__meta">Fortinet</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.svg" alt="Fortinet" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.png" alt="Fortinet"></span>
                             <div>
                                 <h3 class="certificate__title">CyberSec</h3>
                                 <span class="certificate__meta">Fortinet</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cisco.svg" alt="Cisco" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cisco.png" alt="Cisco"></span>
                             <div>
                                 <h3 class="certificate__title">CCNA</h3>
                                 <span class="certificate__meta">Cisco</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/grandstream.png" alt="Grandstream" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/grandstream.png" alt="Grandstream"></span>
                             <div>
                                 <h3 class="certificate__title">GS Certified Specialist</h3>
                                 <span class="certificate__meta">Grandstream</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/mikrotik.svg" alt="MikroTik" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/mikrotik.png" alt="MikroTik"></span>
                             <div>
                                 <h3 class="certificate__title">MikroTik</h3>
                                 <span class="certificate__meta">MikroTik</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/intelbras.png" alt="Intelbras" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/intelbras.png" alt="Intelbras"></span>
                             <div>
                                 <h3 class="certificate__title">Redes em Fibra</h3>
                                 <span class="certificate__meta">Intelbras</span>
@@ -341,35 +367,35 @@
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/udemy.svg" alt="Udemy" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/udemy.svg" alt="Udemy"></span>
                             <div>
                                 <h3 class="certificate__title">Python</h3>
                                 <span class="certificate__meta">Udemy</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/udemy.svg" alt="Udemy" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/udemy.svg" alt="Udemy"></span>
                             <div>
                                 <h3 class="certificate__title">Redes e Computadores</h3>
                                 <span class="certificate__meta">Udemy</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/estudonauta.png" alt="Estudonauta" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/estudonauta.png" alt="Estudonauta"></span>
                             <div>
                                 <h3 class="certificate__title">Certificação em Dados</h3>
                                 <span class="certificate__meta">Estudonauta</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cursoemvideo.png" alt="Curso em Vídeo" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cursoemvideo.png" alt="Curso em Vídeo"></span>
                             <div>
                                 <h3 class="certificate__title">Análise de Dados</h3>
                                 <span class="certificate__meta">Curso em Vídeo</span>
                             </div>
                         </li>
                         <li class="certificate">
-                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cursoemvideo.png" alt="Curso em Vídeo" loading="lazy"></span>
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cursoemvideo.png" alt="Curso em Vídeo"></span>
                             <div>
                                 <h3 class="certificate__title">SQL</h3>
                                 <span class="certificate__meta">Curso em Vídeo</span>
@@ -380,26 +406,31 @@
 
                 <!-- INTERESSES -->
                 <section class="card section" id="interests">
-                    <h2 class="card__title"><i class='bx bx-heart'></i> Interesses</h2>
+                    <h2 class="card__title">Fora do expediente</h2>
+                    <p class="card__text interests__lead">
+                        Tecnologia pra mim é entusiasmo, não só profissão: se aparece aparelho novo,
+                        rede pra fuçar ou um problema que ninguém entendeu, eu já quero meter a mão.
+                        Curiosidade é o que mais me move — e o resto é a resenha de sempre.
+                    </p>
                     <div class="interests">
-                        <div class="interest"><i class='bx bx-code-alt'></i><span>Programar</span></div>
+                        <div class="interest"><i class='bx bx-football'></i><span>Flamengo</span></div>
+                        <div class="interest"><i class='bx bx-trophy'></i><span>Futebol</span></div>
+                        <div class="interest"><i class='bx bx-chip'></i><span>Fuçar em hardware</span></div>
+                        <div class="interest">
+                            <svg class="interest__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3.2" />
+                                <path d="M12 2.5v6.3M12 15.2v6.3M2.5 12h6.3M15.2 12h6.3M5.4 5.4l4.5 4.5M14.1 14.1l4.5 4.5M18.6 5.4l-4.5 4.5M9.9 14.1l-4.5 4.5" />
+                            </svg>
+                            <span>Homem-Aranha</span>
+                        </div>
+                        <div class="interest"><i class='bx bx-movie-play'></i><span>Filmes e séries de herói</span></div>
+                        <div class="interest"><i class='bx bx-book-open'></i><span>Quadrinhos</span></div>
                         <div class="interest"><i class='bx bxs-coffee-togo'></i><span>Café</span></div>
                         <div class="interest"><i class='bx bxs-plane-alt'></i><span>Viajar</span></div>
-                        <div class="interest"><i class='bx bx-football'></i><span>Esportes</span></div>
                     </div>
+                    <p class="interests__note">// o manual é o último recurso</p>
                 </section>
 
-                <!-- REFERÊNCIAS -->
-                <section class="card section" id="references">
-                    <h2 class="card__title"><i class='bx bx-link-alt'></i> Referências</h2>
-                    <p class="card__text">
-                        Referências profissionais disponíveis sob solicitação.
-                        Entre em contato por
-                        <a href="mailto:pedrolcsantos541@gmail.com" class="link">e-mail</a>
-                        ou pelo
-                        <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener" class="link">LinkedIn</a>.
-                    </p>
-                </section>
             </div>
         </div>
     </main>

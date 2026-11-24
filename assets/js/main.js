@@ -94,6 +94,8 @@ function applyTheme(theme) {
 
 if (savedTheme) {
     applyTheme(savedTheme);
+} else {
+    applyTheme('dark');
 }
 
 if (themeButton) {
@@ -119,10 +121,20 @@ const resumeButton = document.getElementById('resume-button');
 const resumeArea = document.getElementById('resume');
 
 if (resumeButton && resumeArea && typeof html2pdf !== 'undefined') {
-    resumeButton.addEventListener('click', () => {
+    resumeButton.addEventListener('click', async () => {
         const previousTheme = document.body.classList.contains(darkTheme);
 
+        /* garante que logos e foto estejam decodificados antes da captura */
+        await Promise.all([...resumeArea.querySelectorAll('img')].map(img =>
+            img.decode ? img.decode().catch(() => {}) : Promise.resolve()
+        ));
+
         /* O PDF é sempre gerado no tema claro, em layout compacto */
+        const restoreTheme = () => {
+            document.body.classList.remove('pdf-mode');
+            applyTheme(previousTheme ? 'dark' : 'light');
+        };
+
         document.body.classList.remove(darkTheme);
         document.body.classList.add('pdf-mode');
 
@@ -132,13 +144,14 @@ if (resumeButton && resumeArea && typeof html2pdf !== 'undefined') {
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 3, useCORS: true, backgroundColor: '#ffffff' },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak: { mode: ['css', 'legacy'], avoid: ['.card', '.job', '.certificate'] }
+            pagebreak: {
+                mode: ['css', 'legacy'],
+                avoid: ['.job', '.certificate', '.timeline__item', '.language', '.interest']
+            }
         }).from(resumeArea).save().then(() => {
-            document.body.classList.remove('pdf-mode');
-            if (previousTheme) document.body.classList.add(darkTheme);
+            restoreTheme();
         }).catch(() => {
-            document.body.classList.remove('pdf-mode');
-            if (previousTheme) document.body.classList.add(darkTheme);
+            restoreTheme();
         });
     });
 }
