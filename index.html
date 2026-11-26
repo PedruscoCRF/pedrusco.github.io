@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- FAVICON -->
-    <link rel="icon" href="assets/img/pedro.jpeg" type="image/jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 </head>
 <body class="dark-theme">
     <!-- HEADER -->
@@ -67,7 +68,8 @@
             </svg>
 
             <div class="hero__photo">
-                <img src="assets/img/pedro.jpeg" alt="Foto de Pedro Lucas" class="hero__img">
+                <img src="assets/img/pedro.webp" alt="Foto de Pedro Lucas" class="hero__img"
+                     width="720" height="405" fetchpriority="high" decoding="async">
             </div>
 
             <div class="hero__content">
@@ -95,6 +97,9 @@
                     <button class="btn btn--ghost" id="resume-button-web" title="Baixar a versão visual, igual ao site">
                         <i class='bx bx-file'></i> Versão web
                     </button>
+                    <a class="btn btn--ghost" href="assets/curriculo-pedro-lucas-ats.docx" download="Curriculo-Pedro-Lucas-Almeida.docx" title="Para portais que só aceitam Word">
+                        <i class='bx bx-file-blank'></i> Word (.docx)
+                    </a>
                     <a class="btn btn--ghost" href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener">
                         <i class='bx bxl-linkedin'></i> LinkedIn
                     </a>
@@ -462,6 +467,11 @@
             <h1>Pedro Lucas Martins dos Santos Almeida</h1>
             <p class="ats-role">Suporte Técnico | Infraestrutura de TI | Redes e Telecomunicações</p>
             <p class="ats-contact">São Gonçalo - RJ | (21) 99774-3710 | pedrolcsantos541@gmail.com</p>
+            <p class="ats-contact">
+                <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/">linkedin.com/in/pedro-lucas-b03024219</a> |
+                <a href="https://github.com/PedruscoCRF">github.com/PedruscoCRF</a> |
+                <a href="https://pedruscocrf.github.io/pedrusco.github.io/">pedruscocrf.github.io/pedrusco.github.io</a>
+            </p>
         </header>
 
         <h2>Resumo Profissional</h2>
@@ -549,10 +559,7 @@
         <p>Inglês - Avançado (C1)</p>
     </section>
 
-    <!-- HTML2PDF -->
-    <script src="assets/js/html2pdf.bundle.min.js"></script>
-
-    <!-- MAIN JS -->
+    <!-- MAIN JS (carrega o html2pdf sob demanda) -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>

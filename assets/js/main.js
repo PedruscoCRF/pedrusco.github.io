@@ -119,9 +119,43 @@ if (yearElement) {
    ============================================================ */
 const resumeWebButton = document.getElementById('resume-button-web');
 const resumeArea = document.getElementById('resume');
+const HTML2PDF_SRC = 'assets/js/html2pdf.bundle.min.js';
+let html2pdfPromise = null;
 
-if (resumeWebButton && resumeArea && typeof html2pdf !== 'undefined') {
+/* O bundle tem ~470 KB: só é baixado quando alguém pede a versão web */
+function loadHtml2Pdf() {
+    if (typeof html2pdf !== 'undefined') return Promise.resolve();
+
+    if (!html2pdfPromise) {
+        html2pdfPromise = new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = HTML2PDF_SRC;
+            script.async = true;
+            script.onload = resolve;
+            script.onerror = () => {
+                html2pdfPromise = null;
+                reject(new Error('Não foi possível carregar o gerador de PDF'));
+            };
+            document.head.appendChild(script);
+        });
+    }
+
+    return html2pdfPromise;
+}
+
+if (resumeWebButton && resumeArea) {
     resumeWebButton.addEventListener('click', async () => {
+        if (resumeWebButton.disabled) return;
+        resumeWebButton.disabled = true;
+
+        try {
+            await loadHtml2Pdf();
+        } catch (error) {
+            resumeWebButton.disabled = false;
+            return;
+        }
+
+
         const previousTheme = document.body.classList.contains(darkTheme);
 
         /* garante que logos e foto estejam decodificados antes da captura */
@@ -150,8 +184,10 @@ if (resumeWebButton && resumeArea && typeof html2pdf !== 'undefined') {
             }
         }).from(resumeArea).save().then(() => {
             restoreTheme();
+            resumeWebButton.disabled = false;
         }).catch(() => {
             restoreTheme();
+            resumeWebButton.disabled = false;
         });
     });
 }

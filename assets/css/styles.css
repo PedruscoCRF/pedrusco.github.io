@@ -1136,6 +1136,12 @@ body.pdf-mode .timeline__item {
         color: #000;
     }
 
+    /* links impressos como texto simples, sem azul nem sublinhado */
+    .ats-resume .ats-contact a {
+        color: #000;
+        text-decoration: none;
+    }
+
     .ats-resume h2 {
         margin: 6pt 0 3pt;
         padding-bottom: 1.5pt;
