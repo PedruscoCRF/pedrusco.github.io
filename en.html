@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pedro Lucas — IT Support, IT Infrastructure, Networks and Telecommunications. São Gonçalo, RJ, Brazil.">
+    <meta name="theme-color" content="#0a0a0c">
+
+    <title>Pedro Lucas — IT Support and Infrastructure</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+</head>
+<body class="dark-theme" data-pdf-filename="Pedro-Lucas-Resume.pdf">
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Pedro <span>Lucas</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#profile" class="nav__link">Profile</a></li>
+                    <li><a href="#education" class="nav__link">Education</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#experience" class="nav__link">Experience</a></li>
+                    <li><a href="#certificate" class="nav__link">Certificates</a></li>
+                    <li><a href="#references" class="nav__link">References</a></li>
+                </ul>
+                <button class="nav__close icon-btn" id="nav-close" aria-label="Close menu">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <a class="icon-btn lang-switch" href="index.html" hreflang="pt-BR" lang="pt-BR" title="Versão em português" aria-label="Ver versão em português">PT</a>
+                <button class="icon-btn" id="theme-button" title="Toggle theme" aria-label="Toggle theme">
+                    <i class='bx bx-moon' id="theme-icon"></i>
+                </button>
+                <button class="icon-btn nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="resume">
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <svg class="hero__web" viewBox="0 0 220 220" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="1">
+                    <path d="M220 0 L0 0 M220 0 L64 156 M220 0 L220 220"/>
+                    <path d="M160 0 A60 60 0 0 1 220 60"/>
+                    <path d="M100 0 A120 120 0 0 1 220 120"/>
+                    <path d="M40 0 A180 180 0 0 1 220 180"/>
+                </g>
+            </svg>
+
+            <div class="hero__photo">
+                <img src="assets/img/pedro.webp" alt="Photo of Pedro Lucas" class="hero__img"
+                     width="405" height="405" fetchpriority="high" decoding="async">
+            </div>
+
+            <div class="hero__content">
+                <p class="hero__prompt"><span>pedro@sg-rj</span>:~$ whoami</p>
+                <h1 class="hero__title">Pedro <b>Lucas</b></h1>
+                <p class="hero__role">it support · infrastructure · networks and telecom</p>
+                <p class="hero__text">
+                    IT support and infrastructure professional with experience in corporate environments and
+                    critical operations: networks, Windows Server, Active Directory, CCTV, IP telephony and
+                    telecommunications — including embedded IT infrastructure in an offshore environment.
+                </p>
+
+                <p class="hero__status"><span class="hero__dot"></span> open to opportunities</p>
+
+                <div class="hero__chips">
+                    <span class="chip"><i class='bx bx-map'></i> São Gonçalo, RJ</span>
+                    <a class="chip" href="mailto:pedrolcsantos541@gmail.com"><i class='bx bx-envelope'></i> pedrolcsantos541@gmail.com</a>
+                    <a class="chip" href="tel:+5521997743710"><i class='bx bx-phone'></i> +55 (21) 99774-3710</a>
+                </div>
+
+                <div class="hero__actions">
+                    <a class="btn btn--primary" id="resume-button" href="assets/curriculo-pedro-lucas-ats-en.pdf" download="Pedro-Lucas-Resume-ATS.pdf">
+                        <i class='bx bx-download'></i> Download résumé (ATS)
+                    </a>
+                    <button class="btn btn--ghost" id="resume-button-web" title="Download the visual version, same as the site">
+                        <i class='bx bx-file'></i> Web version
+                    </button>
+                    <a class="btn btn--ghost" href="assets/curriculo-pedro-lucas-ats-en.docx" download="Pedro-Lucas-Resume.docx" title="For portals that only accept Word files">
+                        <i class='bx bx-file-blank'></i> Word (.docx)
+                    </a>
+                    <a class="btn btn--ghost" href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener">
+                        <i class='bx bxl-linkedin'></i> LinkedIn
+                    </a>
+                    <a class="btn btn--ghost" href="https://github.com/PedruscoCRF" target="_blank" rel="noopener">
+                        <i class='bx bxl-github'></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="layout">
+            <!-- LEFT COLUMN -->
+            <div class="layout__col">
+                <!-- PROFILE -->
+                <section class="card section" id="profile">
+                    <h2 class="card__title">Profile</h2>
+                    <p class="card__text">
+                        IT support and infrastructure professional with experience in corporate environments
+                        and critical operations. Hands-on with computer networks, Windows Server, Active
+                        Directory (AD), SharePoint, hardware, software, CCTV, electronic security and
+                        telecommunications. Experience with switches, routers, access points, firewalls,
+                        structured cabling, servers, IP and analog telephony, end-user support, technical
+                        documentation and troubleshooting. Additional experience in an offshore environment,
+                        with embedded IT infrastructure, Starlink connectivity and support for navigation and
+                        communication systems.
+                    </p>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="card section" id="education">
+                    <h2 class="card__title">Education</h2>
+                    <ul class="timeline">
+                        <li class="timeline__item">
+                            <span class="timeline__dot"></span>
+                            <div class="timeline__body">
+                                <h3 class="timeline__title">Computer Science</h3>
+                                <span class="timeline__place">Universidade Federal Fluminense (UFF) · Niterói, RJ</span>
+                                <span class="timeline__year">In progress — 2026</span>
+                            </div>
+                        </li>
+                        <li class="timeline__item">
+                            <span class="timeline__dot"></span>
+                            <div class="timeline__body">
+                                <h3 class="timeline__title">English</h3>
+                                <span class="timeline__place">Centro Integrado Ulysses Guimarães · São Gonçalo, RJ</span>
+                                <span class="timeline__year">Completed — 2024</span>
+                            </div>
+                        </li>
+                        <li class="timeline__item timeline__item--last">
+                            <span class="timeline__dot"></span>
+                            <div class="timeline__body">
+                                <h3 class="timeline__title">High School</h3>
+                                <span class="timeline__place">CIEP 412 Dr. Zerbini · São Gonçalo, RJ</span>
+                                <span class="timeline__year">Completed — 2020</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- SKILLS -->
+                <section class="card section" id="skills">
+                    <h2 class="card__title">Skills</h2>
+
+                    <div class="skill-group">
+                    <h3 class="card__subtitle">Networks &amp; telecom</h3>
+                    <div class="tags">
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Switches</span>
+                        <span class="tag">Routers</span>
+                        <span class="tag">Access points</span>
+                        <span class="tag">Firewall</span>
+                        <span class="tag">Structured cabling</span>
+                        <span class="tag">Starlink</span>
+                        <span class="tag">IP and analog telephony</span>
+                    </div>
+                    </div>
+
+                    <div class="skill-group">
+                    <h3 class="card__subtitle">Servers &amp; systems</h3>
+                    <div class="tags">
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">SharePoint</span>
+                        <span class="tag">Servers and backup</span>
+                        <span class="tag">SAP</span>
+                    </div>
+                    </div>
+
+                    <div class="skill-group">
+                    <h3 class="card__subtitle">Electronic security</h3>
+                    <div class="tags">
+                        <span class="tag">IP and analog CCTV</span>
+                        <span class="tag">Electronic security</span>
+                        <span class="tag">Turnstiles</span>
+                        <span class="tag">FortiGate</span>
+                    </div>
+                    </div>
+
+                    <div class="skill-group">
+                    <h3 class="card__subtitle">Support &amp; offshore</h3>
+                    <div class="tags">
+                        <span class="tag">Help desk</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">Hardware and software</span>
+                        <span class="tag">SSB and AIS</span>
+                    </div>
+                    </div>
+
+                    <div class="skill-group">
+                    <h3 class="card__subtitle">Data &amp; programming</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Data analysis</span>
+                    </div>
+                    </div>
+                </section>
+
+                <!-- LANGUAGES -->
+                <section class="card section" id="languages">
+                    <h2 class="card__title">Languages</h2>
+                    <ul class="language-list">
+                        <li class="language">
+                            <span class="language__name">Portuguese</span>
+                            <span class="language__level">Native</span>
+                        </li>
+                        <li class="language">
+                            <span class="language__name">English</span>
+                            <span class="language__level">Advanced — C1</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- REFERENCES -->
+                <section class="card section" id="references">
+                    <h2 class="card__title">References</h2>
+                    <p class="card__text">
+                        Professional references available upon request.
+                        Get in touch by
+                        <a href="mailto:pedrolcsantos541@gmail.com" class="link">e-mail</a>
+                        or on
+                        <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener" class="link">LinkedIn</a>.
+                    </p>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="layout__col">
+                <!-- EXPERIENCE -->
+                <section class="card section" id="experience">
+                    <h2 class="card__title">Experience</h2>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">IT and Telephony Technical Assistant</h3>
+                            <span class="job__period">04/2026 — 07/2026</span>
+                        </div>
+                        <span class="job__company">
+                            <i class='bx bx-building'></i> NewScon · Rio de Janeiro, RJ
+                        </span>
+                        <ul class="job__list">
+                            <li>Active Directory, Windows Server and SharePoint: environment administration and support for corporate services.</li>
+                            <li>IP and analog CCTV, turnstiles, structured cabling and switches: installation, configuration and maintenance.</li>
+                            <li>IP and analog telephony, including extension configuration and maintenance.</li>
+                            <li>Hardware, software and systems: diagnostics and maintenance; quotations and technical documentation.</li>
+                        </ul>
+                    </article>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">IT Technician</h3>
+                            <span class="job__period">07/2025 — 02/2026</span>
+                        </div>
+                        <span class="job__company">
+                            <i class='bx bx-building'></i> FLCOMM · Niterói, RJ
+                        </span>
+                        <ul class="job__list">
+                            <li>CCTV and IP cameras: installation, configuration and fault diagnosis.</li>
+                            <li>Network: firewall, switches, routers, access points, segmentation and structured cabling.</li>
+                            <li>Starlink connectivity and support for SSB, AIS and vessel systems in a critical offshore environment.</li>
+                            <li>Servers, storage and backup, with technical documentation of interventions.</li>
+                        </ul>
+                    </article>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">IT Intern</h3>
+                            <span class="job__period">02/2023 — 12/2024</span>
+                        </div>
+                        <a class="job__company" href="http://www.procon.rj.gov.br" target="_blank" rel="noopener">
+                            <i class='bx bx-building'></i> Procon-RJ · Rio de Janeiro, RJ
+                        </a>
+                        <ul class="job__list">
+                            <li>Hardware and software diagnostics and repair, computer assembly and configuration.</li>
+                            <li>End-user support through the help desk and in person.</li>
+                            <li>Technical documentation and system performance monitoring.</li>
+                        </ul>
+                    </article>
+
+                    <article class="job">
+                        <div class="job__head">
+                            <h3 class="job__title">Apprentice</h3>
+                            <span class="job__period">02/2022 — 12/2022</span>
+                        </div>
+                        <a class="job__company" href="https://bravante.com.br" target="_blank" rel="noopener">
+                            <i class='bx bx-building'></i> Grupo Bravante · São Gonçalo, RJ
+                        </a>
+                        <ul class="job__list">
+                            <li>Customer service and support for document management.</li>
+                            <li>Registration of materials and suppliers in SAP and inventory control.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- CERTIFICATES -->
+                <section class="card section" id="certificate">
+                    <h2 class="card__title">Certificates</h2>
+                    <ul class="certificates">
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.png" alt="Fortinet"></span>
+                            <div>
+                                <h3 class="certificate__title">FortiGate Operator</h3>
+                                <span class="certificate__meta">Fortinet</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.png" alt="Fortinet"></span>
+                            <div>
+                                <h3 class="certificate__title">FortiGate Specialist</h3>
+                                <span class="certificate__meta">Fortinet</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/fortinet.png" alt="Fortinet"></span>
+                            <div>
+                                <h3 class="certificate__title">CyberSec</h3>
+                                <span class="certificate__meta">Fortinet</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cisco.png" alt="Cisco"></span>
+                            <div>
+                                <h3 class="certificate__title">CCNA</h3>
+                                <span class="certificate__meta">Cisco</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/grandstream.png" alt="Grandstream"></span>
+                            <div>
+                                <h3 class="certificate__title">GS Certified Specialist</h3>
+                                <span class="certificate__meta">Grandstream</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/mikrotik.png" alt="MikroTik"></span>
+                            <div>
+                                <h3 class="certificate__title">MikroTik</h3>
+                                <span class="certificate__meta">MikroTik</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/intelbras.png" alt="Intelbras"></span>
+                            <div>
+                                <h3 class="certificate__title">Fiber Networks</h3>
+                                <span class="certificate__meta">Intelbras</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <i class='bx bx-first-aid certificate__icon'></i>
+                            <div>
+                                <h3 class="certificate__title">CBSP and HUET</h3>
+                                <span class="certificate__meta">CEPAFMAR</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/udemy.svg" alt="Udemy"></span>
+                            <div>
+                                <h3 class="certificate__title">Python</h3>
+                                <span class="certificate__meta">Udemy</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/udemy.svg" alt="Udemy"></span>
+                            <div>
+                                <h3 class="certificate__title">Networks and Computers</h3>
+                                <span class="certificate__meta">Udemy</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/estudonauta.png" alt="Estudonauta"></span>
+                            <div>
+                                <h3 class="certificate__title">Data Certification</h3>
+                                <span class="certificate__meta">Estudonauta</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cursoemvideo.png" alt="Curso em Vídeo"></span>
+                            <div>
+                                <h3 class="certificate__title">Data Analysis</h3>
+                                <span class="certificate__meta">Curso em Vídeo</span>
+                            </div>
+                        </li>
+                        <li class="certificate">
+                            <span class="certificate__icon certificate__icon--logo"><img class="certificate__logo" src="assets/img/logos/cursoemvideo.png" alt="Curso em Vídeo"></span>
+                            <div>
+                                <h3 class="certificate__title">SQL</h3>
+                                <span class="certificate__meta">Curso em Vídeo</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- INTERESTS -->
+                <section class="card section" id="interests">
+                    <h2 class="card__title">Off the clock</h2>
+                    <p class="card__text interests__lead">
+                        Technology is enthusiasm for me, not just a job: when a new device shows up, a network
+                        to poke at or a problem nobody has figured out, I'm already rolling up my sleeves.
+                        Curiosity is what drives me the most — and the rest is the usual hangout with friends.
+                    </p>
+                    <div class="interests">
+                        <div class="interest"><i class='bx bx-football'></i><span>Flamengo</span></div>
+                        <div class="interest"><i class='bx bx-trophy'></i><span>Football</span></div>
+                        <div class="interest"><i class='bx bx-chip'></i><span>Tinkering with hardware</span></div>
+                        <div class="interest">
+                            <svg class="interest__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3.2" />
+                                <path d="M12 2.5v6.3M12 15.2v6.3M2.5 12h6.3M15.2 12h6.3M5.4 5.4l4.5 4.5M14.1 14.1l4.5 4.5M18.6 5.4l-4.5 4.5M9.9 14.1l-4.5 4.5" />
+                            </svg>
+                            <span>Spider-Man</span>
+                        </div>
+                        <div class="interest"><i class='bx bx-movie-play'></i><span>Superhero movies and series</span></div>
+                        <div class="interest"><i class='bx bx-book-open'></i><span>Comics</span></div>
+                        <div class="interest"><i class='bx bxs-coffee-togo'></i><span>Coffee</span></div>
+                        <div class="interest"><i class='bx bxs-plane-alt'></i><span>Travel</span></div>
+                    </div>
+                    <p class="interests__note">// the manual is the last resort</p>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year">2026</span> Pedro Lucas · São Gonçalo, RJ</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/PedruscoCRF" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/pedrusco.atl/" target="_blank" rel="noopener" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:pedrolcsantos541@gmail.com" aria-label="E-mail"><i class='bx bx-envelope'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#home" class="scrolltop" id="scrolltop" aria-label="Back to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <!-- ATS RÉSUMÉ (only visible when printing / downloading the PDF) -->
+    <section class="ats-resume" id="ats-resume" aria-hidden="true">
+        <header class="ats-head">
+            <h1>Pedro Lucas Martins dos Santos Almeida</h1>
+            <p class="ats-role">IT Support | IT Infrastructure | Networks and Telecommunications</p>
+            <p class="ats-contact">São Gonçalo - RJ | +55 (21) 99774-3710 | pedrolcsantos541@gmail.com</p>
+            <p class="ats-contact">
+                <a href="https://www.linkedin.com/in/pedro-lucas-b03024219/">linkedin.com/in/pedro-lucas-b03024219</a> |
+                <a href="https://github.com/PedruscoCRF">github.com/PedruscoCRF</a> |
+                <a href="https://pedruscocrf.github.io/pedrusco.github.io/">pedruscocrf.github.io/pedrusco.github.io</a>
+            </p>
+        </header>
+
+        <h2>Professional Summary</h2>
+        <p>
+            IT Support and Infrastructure professional with experience in corporate environments and critical
+            operations. Hands-on with computer networks, Windows Server, Active Directory (AD), SharePoint,
+            hardware, software, CCTV, electronic security and telecommunications. Experience with switches,
+            routers, access points, firewalls, structured cabling, servers, IP and analog telephony, end-user
+            support, technical documentation and troubleshooting. Additional experience in an offshore
+            environment, with embedded IT infrastructure, Starlink connectivity and support for navigation and
+            communication systems, including SSB and AIS.
+        </p>
+
+        <h2>Technical Skills</h2>
+        <p>
+            Active Directory (AD) | Windows Server | SharePoint | TCP/IP Networks | Switches | Routers |
+            Access Points | Firewall | Structured Cabling | IP/Analog CCTV | Electronic Security |
+            IP/Analog Telephony | Starlink | Servers | Hardware and Software | Help Desk |
+            Troubleshooting | SAP | SSB | AIS
+        </p>
+
+        <h2>Professional Experience</h2>
+
+        <div class="ats-job">
+            <h3>IT and Telephony Technical Assistant</h3>
+            <p class="ats-meta">04/2026 - 07/2026 | NEWSCON - Rio de Janeiro - RJ</p>
+            <ul>
+                <li>Administration and maintenance of Active Directory (AD), Windows Server and SharePoint, supporting infrastructure and corporate services.</li>
+                <li>Hardware and software diagnostics and maintenance; installation and configuration of systems and applications.</li>
+                <li>Preparation of quotations, documents and technical specifications for IT equipment, services and solutions.</li>
+                <li>Installation and configuration of IP and analog CCTV, turnstiles, electronic security, structured cabling and switches.</li>
+                <li>Installation and support of IP and analog telephony, including extension configuration and maintenance.</li>
+            </ul>
+        </div>
+
+        <div class="ats-job">
+            <h3>IT Technician</h3>
+            <p class="ats-meta">07/2025 - 02/2026 | FLCOMM - Niterói - RJ</p>
+            <ul>
+                <li>Installation, configuration and maintenance of CCTV and IP cameras, with fault diagnosis, network adjustments and operational support.</li>
+                <li>Support for network infrastructure: firewall, structured cabling, switches, routers, access points and segmentation.</li>
+                <li>Configuration, monitoring and support of Starlink and other satellite communication systems.</li>
+                <li>Basic management of servers, network services, storage and backup routines.</li>
+                <li>Support for SSB, AIS and auxiliary systems integrated into the vessel network; hardware, software and network troubleshooting in a critical environment.</li>
+                <li>Technical documentation of configurations, topologies and interventions performed.</li>
+            </ul>
+        </div>
+
+        <div class="ats-job">
+            <h3>IT Intern</h3>
+            <p class="ats-meta">02/2023 - 12/2024 | Procon-RJ - Rio de Janeiro - RJ</p>
+            <ul>
+                <li>Diagnosis of computer equipment problems and resolution of hardware and software failures.</li>
+                <li>Assembly and configuration of computers, operating systems and applications.</li>
+                <li>Technical support to users, in-person service and installation/configuration of help desk tools.</li>
+                <li>Preparation of technical documentation and monitoring of system performance.</li>
+            </ul>
+        </div>
+
+        <div class="ats-job">
+            <h3>Apprentice</h3>
+            <p class="ats-meta">02/2022 - 12/2022 | Grupo Bravante - São Gonçalo - RJ</p>
+            <ul>
+                <li>Customer service, support for document management and administrative routines.</li>
+                <li>Management and registration of materials and suppliers in SAP, plus inventory control.</li>
+            </ul>
+        </div>
+
+        <h2>Education</h2>
+        <ul>
+            <li>Computer Science - In progress (2026) | Universidade Federal Fluminense (UFF) - Niterói, RJ</li>
+            <li>English - Completed (2024) | Centro Integrado Ulysses Guimarães - São Gonçalo, RJ</li>
+            <li>High School - Completed (2020) | CIEP 412 Dr. Zerbini - São Gonçalo, RJ</li>
+        </ul>
+
+        <h2>Certifications and Courses</h2>
+        <p>
+            FortiGate Operator (Fortinet) | FortiGate Specialist (Fortinet) | CyberSec (Fortinet) |
+            CCNA (Cisco) | GS Certified Specialist (Grandstream) | MikroTik | Fiber Networks (Intelbras) |
+            CBSP and HUET (CEPAFMAR) | Python (Udemy) | Networks and Computers (Udemy) |
+            Data Certification (Estudonauta) | Data Analysis (Curso em Vídeo) | SQL (Curso em Vídeo)
+        </p>
+
+        <h2>Languages</h2>
+        <p>English - Advanced (C1)</p>
+    </section>
+
+    <!-- MAIN JS (loads html2pdf on demand) -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

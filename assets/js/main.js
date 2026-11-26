@@ -174,7 +174,7 @@ if (resumeWebButton && resumeArea) {
 
         html2pdf().set({
             margin: [8, 8, 8, 8],
-            filename: 'Pedro-Lucas-Curriculo.pdf',
+            filename: document.body.dataset.pdfFilename || 'Pedro-Lucas-Curriculo.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 3, useCORS: true, backgroundColor: '#ffffff' },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },

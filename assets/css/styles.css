@@ -206,6 +206,14 @@ button {
     border-color: var(--line-strong);
 }
 
+/* alternador de idioma (EN / PT) */
+.lang-switch {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
 .nav__toggle,
 .nav__close {
     display: none;
